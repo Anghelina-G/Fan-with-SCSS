@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+}
+
+p {
+  text-align: center;
+  width: 25em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  padding-top: 13em;
+}
+
+ul li {
+  color: #fff;
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 0.5em;
+  width: 30em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 60% 5em 5em 60%;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+ul li:nth-child(11)::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 1px 1px #030303;
+          box-shadow: 0 0 1px 1px #030303;
+  background-image: radial-gradient(#eceaea, #8d0505);
+  position: absolute;
+  top: 44%;
+  left: 2%;
+}
+
+ul li:nth-child(1) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#fded03), to(red));
+  background-image: linear-gradient(to top right, #fded03, red);
+  border: 0.1em solid #fdef20;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(2) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#faea02), to(red));
+  background-image: linear-gradient(to top right, #faea02, red);
+  border: 0.1em solid #fdf13a;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(3) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#f6e602), to(red));
+  background-image: linear-gradient(to top right, #f6e602, red);
+  border: 0.1em solid #fef353;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(4) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#f2e202), to(red));
+  background-image: linear-gradient(to top right, #f2e202, red);
+  border: 0.1em solid #fef46c;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(5) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#eede02), to(red));
+  background-image: linear-gradient(to top right, #eede02, red);
+  border: 0.1em solid #fef685;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(6) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#eadb02), to(red));
+  background-image: linear-gradient(to top right, #eadb02, red);
+  border: 0.1em solid #fef89f;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(7) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#e6d702), to(red));
+  background-image: linear-gradient(to top right, #e6d702, red);
+  border: 0.1em solid #fefab8;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(8) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#e2d302), to(red));
+  background-image: linear-gradient(to top right, #e2d302, red);
+  border: 0.1em solid #fffcd1;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(9) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ddcf02), to(red));
+  background-image: linear-gradient(to top right, #ddcf02, red);
+  border: 0.1em solid #fffeeb;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(10) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#d9cb02), to(red));
+  background-image: linear-gradient(to top right, #d9cb02, red);
+  border: 0.1em solid white;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(11) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#d5c802), to(red));
+  background-image: linear-gradient(to top right, #d5c802, red);
+  border: 0.1em solid white;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul li:nth-child(12) {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#d1c402), to(red));
+  background-image: linear-gradient(to top right, #d1c402, red);
+  border: 0.1em solid white;
+  -webkit-box-shadow: 0.1em 0.4em 0.5em black;
+          box-shadow: 0.1em 0.4em 0.5em black;
+}
+
+ul:hover > li:nth-child(1) {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+ul:hover > li:nth-child(2) {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+ul:hover > li:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+ul:hover > li:nth-child(4) {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+ul:hover > li:nth-child(5) {
+  -webkit-transform: rotate(-75deg);
+          transform: rotate(-75deg);
+}
+
+ul:hover > li:nth-child(6) {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+ul:hover > li:nth-child(7) {
+  -webkit-transform: rotate(-105deg);
+          transform: rotate(-105deg);
+}
+
+ul:hover > li:nth-child(8) {
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+ul:hover > li:nth-child(9) {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+ul:hover > li:nth-child(10) {
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+}
+
+ul:hover > li:nth-child(11) {
+  -webkit-transform: rotate(-165deg);
+          transform: rotate(-165deg);
+}
+
+ul:hover > li:nth-child(12) {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+/*# sourceMappingURL=fan.css.map */

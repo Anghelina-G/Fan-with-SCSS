@@ -1,0 +1,73 @@
+$colorD: #333;
+$colorL: #fff;
+$colorM: rgb(253, 237, 7);
+$colorR: red;
+
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $colorD; 
+}
+p{
+    text-align: center;
+    width: 25em;
+}
+ul{
+    margin: 0;
+    padding:0;
+    position: absolute;
+    margin: auto;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 0;
+    height: 0;
+    padding-top: 13em;
+
+    li{
+     color: $colorL;
+     position: absolute;
+     transition: 1s;
+     padding: 0.5em;
+     width: 30em;
+     
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+
+    border-radius: 60% 5em 5em 60%;
+
+    transform-origin: left;
+    transform: rotate(0deg);
+
+    &:nth-child(11)::before{
+        content: "";
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        box-shadow: 0 0 1px 1px #030303;
+        background-image: radial-gradient(rgb(236, 234, 234), rgb(141, 5, 5));
+        position: absolute;
+        top: 44%;
+        left: 2%;
+      }  
+
+         @for $n from 1 through 12 { 
+
+            &:nth-child(#{$n}) {
+            // background-color: lighten($colorM, $n * 3%);
+            // background-image: radial-gradient(lighten($colorM, $n * 3%), $colorR);
+            background-image: linear-gradient(to top right, darken($colorM, $n * 0.8%), $colorR);
+            border: 0.1em solid lighten($colorM, $n * 5%); 
+            box-shadow: 0.1em 0.4em 0.5em black;
+            }
+        }
+    }
+    &:hover{  
+        @for $n from 1 through 12 { 
+             &>li:nth-child(#{$n}) {
+             transform: rotate(-15deg * $n); 
+             }
+        }  
+    }
+}
